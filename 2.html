@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sortArray = (n) =>{
+            let n1 = n
+            for(i=0;i<n1.length;i++){
+                for(j=i;j<n1.length;j++){
+                    if(n1[i]>n1[j]){
+                        let k = n1[i] 
+                            n1[i] = n1[j]
+                            n1[j] = k
+                    }
+                }  
+            }
+            console.log(n1, "ASC")
+            
+            let n2 = n
+            for(i=0;i<n2.length;i++){
+                for(j=i;j<n2.length;j++){
+                    if(n2[i]<n2[j]){
+                        let k = n2[i] 
+                            n2[i] = n2[j]
+                            n2[j] = k
+                    }
+                }  
+            }
+            console.log(n2, "DESC")
+        }
+        sortArray([5,7,4,3,9,6,1,3,7])
+    </script>
+</body>
+</html>
